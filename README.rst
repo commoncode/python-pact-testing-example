@@ -34,6 +34,11 @@ Once that is completed, we can validate the pact file with:
 To make things a little easy to run, the test_provider invoke task automatically starts an testing instance of the provider in a separate thread and closes it again after the validate has been completed. In a real world situation that would likely be handled by the CI server or at least another process.
 
 
+To Do
+-----
+
+This example shows the creation of pact_ files on the consumer side, as well as verifying those pact_ files on the provider side. Currently missing is an example of provider states. In our example we use the BDD approach of describing a test in the given, upon, then syntax. Pact_ testing allows for the writing of state files/code to set up these state during a verification with the ``--provider-states-url`` and ``--provider-states-setup-url`` switches.
+
 .. _pact: https://docs.pact.io/
 .. _python-pact: https://github.com/pact-foundation/pact-python
 .. _pyinvoke: http://docs.pyinvoke.org/en/latest/

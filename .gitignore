@@ -1,0 +1,8 @@
+.python-version
+*.log
+*.json
+tmp
+reports
+log
+__pycache__
+.cache

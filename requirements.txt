@@ -1,0 +1,4 @@
+pact-python
+flask
+pytest
+invoke

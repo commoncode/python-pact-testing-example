@@ -3,13 +3,13 @@ from src.provider import app
 
 
 @task
-def test_consumer(ctx):
+def testconsumer(ctx):
     """Runs the consumer pact tests"""
     ctx.run('pytest src')
 
 
 @task
-def test_provider(ctx):
+def testprovider(ctx):
     """Validate pact files against server"""
     import threading
 
